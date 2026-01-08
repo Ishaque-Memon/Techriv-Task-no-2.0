@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Minimal reset - only what you need */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    bg-color: var(--primary-bg-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Color Variables */
+    --primary-bg-color: #FFFFFF;
+    --primary-text-Wcolor: #FFFFFF;
+    --secondary-bg-color: #F2F7FFB2;
+    --primary-text-color: #18191F;
+    --secondary-color: #8C30F5;
+    --primary-color: #18191F;
+    --fixed-header-bg: #D6B1FF;
+    --nav-menu-bg: #D6B1FF;
+    --testimonial-section-bg: #D5FAFC;
+    --testmonial-subtitle-part-color: #969BAB;
+    
+    
+    /* Font variables using clamp(): dvw for modern browsers, vw as fallback for older browsers */
+    --hero-heading: clamp(2rem, 6vw, 4.5rem);
+    --hero-heading: clamp(2rem, 6dvw, 4.5rem);
+    --common-heading: clamp( 2rem, 4vw, 3rem);
+    --common-heading: clamp( 2rem, 4dvw, 3rem);
+    --common-paragraph: clamp(1rem, 2.5vw, 1.125rem);
+    --common-paragraph: clamp(1rem, 2.5dvw, 1.125rem);
+    --feature-card-heading: clamp(1rem, 2.5vw, 1.5rem);
+    --feature-card-heading: clamp(1rem, 2.5dvw, 1.5rem);
+    --feature-card-paragraph: clamp(0.875rem, 2vw, 1rem);
+    --feature-card-paragraph: clamp(0.875rem, 2dvw, 1rem);
+    --testmonial-subtitle: clamp(1rem, 2.5vw, 1.125rem);
+    --testmonial-subtitle: clamp(1rem, 2.5dvw, 1.125rem);
+    --testimonial-subtitle-part: clamp(0.875rem, 2vw, 1rem);
+    --testimonial-subtitle-part: clamp(0.875rem, 2dvw, 1rem);
+
+}
+
+/* h1 */
+.hero-heading {
+  font-size: var(--hero-heading);
+  color: var(--primary-text-color);
+  font-weight: 800;
+}
+/* h2 */
+.common-heading {
+    font-size: var(--common-heading);
+    color: var(--primary-text-color);
+    font-weight: 800;
+}
+
+.common-paragraph {
+    font-size: var(--common-paragraph);
+    color: var(--primary-text-color);
+    font-weight: 400;
+} 
+/* h5 */
+.feature-card-heading {
+    font-size: var(--feature-card-heading);
+    color: var(--primary-text-color);
+    font-weight: 600;
+    line-height: 32px
+}
+
+.feature-card-paragraph {
+    font-size: var(--feature-card-paragraph);
+    color: var(--primary-text-color);
+    font-weight: 400;
+    line-height: 26px
+}
+
+.testmonial-subtitle {
+    font-size: var(--testmonial-subtitle);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 28px
+}
+
+.testimonial-subtitle-part {
+    font-size: var(--testimonial-subtitle-part);
+    color: var(--testmonial-subtitle-part-color);
+    font-weight: 400;
+    line-height: 24px
+}
+
+/* Infinite Marquee - seamless loop */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+.animate-slide {
+    display: flex;  
+    width: max-content;
+    animation: slide 10s linear infinite;
+    will-change: transform;
+}
+
+/*  Gradient border for marquee container*/
+.gradient-border::before,
+.gradient-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(192,204,218,0.1),
+    rgba(192,204,218,0.6),
+    rgba(192,204,218,0.1)
+  );
+}
+
+.gradient-border::before { top: 0; }
+.gradient-border::after  { bottom: 0; }
+
