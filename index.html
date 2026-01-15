@@ -101,7 +101,7 @@
                 Organise projects.<br>
                 Get more done.
             </h1>
-             <button class="py-4 px-10 bg-[var(--secondary-color)]  font-bold text-xl text-[var(--primary-text-Wcolor)] rounded-lg w-fit cursor-pointer hover:opacity-90 hover:scale-105 transtion-all duration-200">
+             <button class="py-4 px-10 btn-text bg-[var(--secondary-color)] rounded-lg w-fit cursor-pointer hover:opacity-90 hover:scale-105 transtion-all duration-200">
                 Get Started
              </button>  
         </div>
@@ -195,57 +195,62 @@
             </div>
     </section>
     <!--Testimonial Section  -->
-    <section class=" w-full flex flex-col items-center justify-center px-16 py-16 bg-[var(--testimonial-section-bg)]">
-            <div class="flex flex-col items-start justify-start px-16 py-16">
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="common-heading">
-                        Real Stories from <br class="hidden lg:inline">Real Customers
-                    </h2>
-                    <p class="common-paragraph text-center mb-12">
-                        Get inspired by these stories.
-                    </p>
-                </div>
+    <section class=" w-full flex flex-col items-center justify-center bg-[var(--testimonial-section-bg)] px-5 md:px-8 xl:px-16 py-8 md:py-12 xl:py-16">
                 <!-- Testimonial Cards -->
-            <div class="grid  grid-cols-1 grid-cols-2 gap-8 gap-y-16 justify-center items-center">
-                <div class="bg-[var(--primary-bg-color)]">
-                <!-- Feature card 1 -->
-                <div class="flex flex-col justify-start items-start px-8 py-8">
-                    <div class="flex justify-start items-start">
-                        <img src="assets/Logos/Hubspot_Logo.svg" alt="feature icon" class="mb-4">   
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-20 gap-6 md:gap-8 xl:gap-x-6 xl:gap-y-8 items-center w-full max-w-screen-2xl relative">
+                <!-- Heading Section - Part of Grid on XL -->
+                <div class="flex xl:row-start-3 xl:col-start-3 xl:col-span-8 xl:absolute xl:top-0 xl:left-13 md:col-span-2 justify-center items-center">
+                    <div class="flex flex-col items-center xl:items-start justify-center xl:justify-start relative text-center xl:text-start w-fit pt-10 xl:pt-0">
+                        <h2 class="common-heading z-1">
+                            Real Stories from <br>Real Customers
+                        </h2>
+                        <p class="common-paragraph lg:text-center ">
+                            Get inspired by these stories.
+                        </p>
+                        <div class="absolute top-4 -left-12 md:top-1 md:-left-16 lg:top-0 lg:-left-20 xl:-top-14 xl:-left-24">
+                            <img src="assets/Vectors/QuoteMark.svg" alt="Quotation Mark" class="w-20 md:w-25 lg:w-30 xl:w-auto">
+                        </div>
                     </div>
-                <div class="flex gap-4 items-start">
-                        <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="mb-4">   
+                </div>
+                <!-- Testimonial card 1 -->
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-5 xl:row-span-3 xl:col-start-5 xl:col-span-6 rounded-lg">
+                    <div class="flex flex-col gap-8 justify-start items-start px-6 md:px-8 py-6 md:py-8">
+                        <div class="w-full max-w-35 h-full max-h-10">
+                            <img src="assets/Logos/Hubspot_Logo.svg" alt="feature icon" class="w-full h-10">   
+                        </div>
+                    <div class="flex gap-4 items-start">
+                            <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="opacity-40 ">   
 
-                        <div class="flex flex-col justify-center gap-6 items-start">
-                            <p class="common-paragraph">
-                                To quickly start my startup 
-                                landing page design, I was  
-                                looking for a landing page UI Kit.
-                                Landify is one of the best landing
-                                 page UI kit I have come across. 
-                                It’s so flexible, well  organised 
-                                and easily editable.
-                            </p>
-                        <div>
-                            <p class="testimonial-subtitle">
-                            Floyd Miles
-                            </p>
-                            <p class="testimonial-subtitle-part">
-                            Vice President, GoPro
-                            </p>
-                        </div>
+                            <div class="flex flex-col justify-center gap-6 items-start">
+                                <p class="common-paragraph">
+                                    To quickly start my startup 
+                                    landing page design, I was  
+                                    looking for a landing page UI Kit.
+                                    Landify is one of the best landing
+                                    page UI kit I have come across. 
+                                    It's so flexible, well  organised 
+                                    and easily editable.
+                                </p>
+                            <div>
+                                <p class="testimonial-subtitle">
+                                Floyd Miles
+                                </p>
+                                <p class="testimonial-subtitle-part">
+                                Vice President, GoPro
+                                </p>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                <div class="bg-[var(--primary-bg-color)]">
-                <!-- Feature card 1 -->
-                <div class="flex flex-col justify-start items-start px-8 py-8">
-                    <div class="flex justify-start items-start">
-                        <img src="assets/Logos/Airbnb_Logo.svg" alt="feature icon" class="mb-4">   
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-5  xl:col-start-11 xl:col-span-7 rounded-lg">
+                <!-- Testimonial card 2 -->
+                <div class="flex flex-col justify-start items-start gap-8 px-6 md:px-8 py-6 md:py-8">
+                    <div class="w-full max-w-33 h-full max-h-10">
+                        <img src="assets/Logos/Airbnb_Logo.svg" alt="feature icon" class="w-full h-10">   
                     </div>
                 <div class="flex gap-4 items-start">
-                        <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="mb-4">   
+                        <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="opacity-40 ">   
 
                         <div class="flex flex-col justify-center gap-6 items-start">
                             <p class="common-paragraph">
@@ -266,14 +271,14 @@
                     </div>
                 </div>
                 </div>
-                <div class="bg-[var(--primary-bg-color)]">
-                <!-- Feature card 1 -->
-                <div class="flex flex-col justify-start items-start px-8 py-8">
-                    <div class="flex justify-start items-start">
-                        <img src="assets/Logos/BookMyShow_Logo.svg" alt="feature icon" class="mb-4">   
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-6 xl:col-start-11 xl:col-span-6 rounded-lg">
+                <!-- Testimonial card 3 -->
+                <div class="flex flex-col justify-start items-start gap-8 px-6 md:px-8 py-6 md:py-8">
+                    <div class="w-full max-w-34 h-full min-h-10">
+                        <img src="assets/Logos/BookMyShow_Logo.svg" alt="feature icon" class="w-full h-10">   
                     </div>
                 <div class="flex gap-4 items-start">
-                        <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="mb-4">   
+                        <img src="assets/Vectors/SmallQuoteMark.svg" alt="feature icon" class="opacity-40 ">   
 
                         <div class="flex flex-col justify-center gap-6 items-start">
                             <p class="common-paragraph">
@@ -293,10 +298,95 @@
                 </div>
                 </div>
             </div>
-        </div>
+
     </section>
+    <!-- Counter Section -->
+    <seciton id="Counter-Stats" class="flex flex-col w-full px-6 py-6 xl:py-21 xl:px-41 bg-[var(--primary-bg-color)]">
+        <div class="flex flex-col items-center justify-center gap-8 xl:flex-row xl:gap-8">
+        <div class="flex flex-col items-center xl:items-start justify-center gap-2 ">
+            <h2 class="common-heading">
+                Our 18 years of achievements
+            </h2>
+            <p class="common-paragraph">
+                With our super powers we have reached this
+            </p>
+        </div>
+        <div class=" grid xl:grid-cols-2 gap-y-10 gap-x-8 w-full xl:w-1/2">
+                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-1 col-end-1">
+                    <img src="assets/Vectors/01.svg" alt="feature icon">
+                    <div class="flex flex-col items-start justify-start ">
+                    <h4 data-target="10000" data-suffix="+" class="counter-heading">
+                        0
+                    </h4>
+                    <span class="feature-card-paragraph">
+                        Customers
+                    </span>
+                </div>
+                </div>
+                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-2 col-end-2">
+                    <img src="assets/Vectors/04.svg" alt="feature icon">
+                    <div class="flex flex-col items-start justify-start">
+                    <h4 data-target="2" data-suffix="Million" class="counter-heading">
+                        0
+                    </h4>
+                    <span class="feature-card-paragraph">
+                        Users
+                    </span>
+                </div>
+                </div>
+            <div class="flex gap-4 justify-center xl:justify-start items-center col-start-1 col-end-1">
+                    <img src="assets/Vectors/05.svg" alt="feature icon">
+                    <div class="flex flex-col items-start justify-start">
+                    <h4 data-target="500" data-suffix="+" class="counter-heading">
+                        0
+                    </h4>
+                    <span class="feature-card-paragraph">
+                        Clients
+                    </span>
+                </div>
+                </div>
+                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-2 col-end-2">
+                    <img src="assets/Vectors/07.svg" alt="feature icon">
+                    <div class="flex flex-col items-start justify-start">
+                    <h4 data-target="140" data-suffix="" class="counter-heading">
+                        0
+                    </h4>
+                    <span class="feature-card-paragraph">
+                        Countries
+                    </span>
+                </div>
+                </div>
+            
+        </div>
+        </div>
+    </seciton>
 
-
+    <!-- Blog Sections -->
+    <section class="flex w-full justify-center py-16">
+        <div class="flex flex-col xl:flex xl:flex-row max-w-3xl xl:max-w-6xl px-6 lg:px-0 gap-8">
+        <div class="flex justify-center items-center bg-[var(--bg-phone-image)] h-auto xl:h-135 overflow-hidden relative max-w-full xl:min-w-135 rounded-lg">
+            <img src="assets/Mobile_Mockup/iphoneX_1.svg" alt="Mobile" 
+                class="relative top-5 left-3 h-auto">
+        </div>
+        <div class="flex flex-col justify-center items-start gap-4 xl:gap-8 w-full px-0 xl:px-12">
+            <div>
+                 <h3 class="bio-heading">Headline</h3>
+            </div>
+            <div>
+                <p class="common-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Condimentum diam orci pretium a pharetra, 
+                feugiat cursus. Dictumst risus, sem egestas odio 
+                cras adipiscing vulputate. Nisi, 
+                risus in suscipit non. Non commodo volutpat, pharetra, vel.
+                </p>
+            </div>
+             <button class=" btn-text-1 cursor-pointer">
+                Get Started ->
+             </button>  
+        </div>
+    </div>
+    </section>
 
 
       <script>
@@ -362,6 +452,48 @@
             })
         }
 
+        const CounterStats = document.getElementById("Counter-Stats");
+        const countElements = document.querySelectorAll(".counter-heading");
+
+        let CounterStarted = false;
+        let duration = 2000;
+
+        window.addEventListener('scroll', () =>{
+            const sectionTop = CounterStats.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if(sectionTop < windowHeight && !CounterStarted){
+                CounterStarted = true;
+                console.log("Counter Started");
+                startCounter();
+            }
+        });
+                function startCounter() {
+                countElements.forEach(element => {
+                    const target = Number(element.dataset.target);
+                    const suffix = element.dataset.suffix || "";
+
+                    let startTime = null;
+
+                    function updateCounter(time) {
+                    if (!startTime) startTime = time;
+
+                    const progress = Math.min((time - startTime) / duration, 1);
+                    const current = Math.floor(progress * target);
+
+                    element.textContent = current.toLocaleString() + suffix;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target.toLocaleString() + suffix;
+                    }
+                    }
+
+                    requestAnimationFrame(updateCounter);
+                });
+        }
+    
     </script>
 </body>
 </html>

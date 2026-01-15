@@ -29,6 +29,7 @@ html {
     --primary-color: #18191F;
     --fixed-header-bg: #D6B1FF;
     --nav-menu-bg: #D6B1FF;
+    --bg-phone-image: #F1E4FF;
     --testimonial-section-bg: #D5FAFC;
     --testmonial-subtitle-part-color: #969BAB;
     
@@ -48,7 +49,11 @@ html {
     --testmonial-subtitle: clamp(1rem, 2.5dvw, 1.125rem);
     --testimonial-subtitle-part: clamp(0.875rem, 2vw, 1rem);
     --testimonial-subtitle-part: clamp(0.875rem, 2dvw, 1rem);
-
+    --counter-heading: clamp( 1rem, 2.2vw, 1.75rem);
+    --counter-heading: clamp( 1rem, 2.2dvw, 1.75rem);
+    --bio-heading: clamp(1.25rem, 3vw, 2.5rem);
+    --btn-text: clamp(0.875rem, 2vw, 1.25rem);
+    --btn-text: clamp(0.875rem, 2dvw, 1.25rem);
 }
 
 /* h1 */
@@ -68,7 +73,16 @@ html {
     font-size: var(--common-paragraph);
     color: var(--primary-text-color);
     font-weight: 400;
+    line-height: 32px
 } 
+/* h4 */
+.counter-heading {
+    font-size: var(--counter-heading);
+    color: var(--primary-text-color);
+    font-weight: 800;
+    line-height: 40px
+}
+
 /* h5 */
 .feature-card-heading {
     font-size: var(--feature-card-heading);
@@ -97,6 +111,27 @@ html {
     font-weight: 400;
     line-height: 24px
 }
+
+.bio-heading {
+    font-size: var(--bio-heading);
+    color: var(--primary-text-color);
+    font-weight: 800;
+    line-height: 54px
+}
+
+.btn-text {
+    font-size: var(--btn-text);
+    color: var(--primary-text-Wcolor);
+    font-weight: 700;
+    line-height: 30px
+}
+.btn-text-1 {
+    font-size: var(--btn-text);
+    color: var(--secondary-color);
+    font-weight: 700;
+    line-height: 30px
+}
+
 
 /* Infinite Marquee - seamless loop */
 @keyframes slide {
