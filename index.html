@@ -27,7 +27,7 @@
                 <div class="flex items-center sm:hidden">
                     <button id="nav-btn" type="button" 
                             onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
-                            class="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-white/5 hover:text-white">
+                            class="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-white/5 hover:text-white cursor-pointer">
                         <span class="sr-only">Open main menu</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
                             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -38,22 +38,22 @@
                 <!-- Logo + Desktop Nav (Center on mobile, Left on desktop) -->
                 <div class="flex items-center justify-center flex-1 sm:flex-initial sm:justify-start gap-[32px]">
                     <a href="#" class="cursor-pointer">
-                    <img src="assets/Website_Logo/Dark.svg" 
-                         alt="Landify Logo" 
-                         class="h-10 object-contain"> 
+                        <img src="assets/Website_Logo/Dark.svg" 
+                            alt="Landify Logo" 
+                            class="h-10 object-contain"> 
                     </a>
-                    <!-- Desktop Navigation -->
-                    <nav class="hidden sm:flex items-center gap-[32px] text-[var(--primary-color)] font-bold text-[14px]">
-                        <a href="#" class="hover:text-gray-600">About</a>
-                        <a href="#" class="hover:text-gray-600">Products</a>
-                        <a href="#" class="hover:text-gray-600">Pricing</a>
-                        <a href="#" class="hover:text-gray-600">Blog</a>
-                        <div class="flex gap-[8px] items-center relative">
-                        <a href="#" class="hover:text-gray-600">More
-                        </a>
-                        <img src="assets/Vectors/Dropdown_Vector.svg" alt="Drop down menu" class="w-3 h-2 relative top-[1px]"/>
-                        </div>
-                    </nav>
+                        <!-- Desktop Navigation -->
+                        <nav class="hidden sm:flex items-center gap-[32px] text-[var(--primary-color)] font-bold text-[14px] cursor-pointer">
+                            <a href="#" class="hover:text-gray-600">About</a>
+                            <a href="#" class="hover:text-gray-600">Products</a>
+                            <a href="#" class="hover:text-gray-600">Pricing</a>
+                            <a href="#" class="hover:text-gray-600">Blog</a>
+                            <div class="flex gap-[8px] items-center relative">
+                            <a href="#" class="hover:text-gray-600">More
+                            </a>
+                            <img src="assets/Vectors/Dropdown_Vector.svg" alt="Drop down menu" class="w-3 h-2 relative top-[1px]"/>
+                            </div>
+                        </nav>
                 </div>
                 
                 <!-- App Badges (Right) -->
@@ -72,7 +72,7 @@
 
             <!-- Mobile Menu (Hidden by default) -->
             <div id="mobile-menu" class="hidden sm:hidden absolute top-full w-full left-0 mt-2 ">
-                <div id="mobile-menu-body" class="flex flex-col gap-2 bg-[var(--nav-menu-bg)] p-5">
+                <div id="mobile-menu-body" class="flex flex-col gap-2 bg-[var(--nav-menu-bg)] p-5 cursor-pointer">
                     <a href="#" class="text-[var(--primary-text-Bcolor)] hover:bg-white/5 px-3 py-2 rounded-md">About</a>
                     <a href="#" class="text-[var(--primary-text-Bcolor)] hover:bg-white/5 px-3 py-2 rounded-md">Products</a>
                     <a href="#" class="text-[var(--primary-text-Bcolor)] hover:bg-white/5 px-3 py-2 rounded-md">Pricing</a>
@@ -122,14 +122,14 @@
     
     <!--Features Section  -->
     <section class=" w-full flex flex-col items-center justify-center px-4 lg:px-[165px] py-16">
-        <div class="flex flex-col items-center justify-center">
-            <h2 class="common-heading">
-                Tailor-made features
-            </h2>
-            <p class="common-paragraph text-center mb-12">
-                Lorem ipsum is common placeholder text used to demonstrate <br class="hidden lg:inline"> 
-                the graphic elements of a document or visual presentation.
-            </p>
+            <div class="flex flex-col items-center justify-center text-center">
+                <h2 class="common-heading">
+                    Tailor-made features
+                </h2>
+                <p class="common-paragraph text-center mb-12">
+                    Lorem ipsum is common placeholder text used to demonstrate <br class="hidden lg:inline"> 
+                    the graphic elements of a document or visual presentation.
+                </p>
             </div>
             <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 justify-center items-center">
             <div class="">
@@ -199,7 +199,7 @@
                 <!-- Testimonial Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-20 gap-6 md:gap-8 xl:gap-x-6 xl:gap-y-8 items-center w-full max-w-screen-2xl relative">
                 <!-- Heading Section - Part of Grid on XL -->
-                <div class="flex xl:row-start-3 xl:col-start-3 xl:col-span-8 xl:absolute xl:top-0 xl:left-13 md:col-span-2 justify-center items-center">
+                <div class="flex xl:row-start-3 xl:col-start-3 xl:col-span-8 xl:absolute xl:top-0 xl:left-6 md:col-span-2 justify-center items-center">
                     <div class="flex flex-col items-center xl:items-start justify-center xl:justify-start relative text-center xl:text-start w-fit pt-10 xl:pt-0">
                         <h2 class="common-heading z-1">
                             Real Stories from <br>Real Customers
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <!-- Testimonial card 1 -->
-                <div class="bg-[var(--primary-bg-color)] xl:row-start-5 xl:row-span-3 xl:col-start-5 xl:col-span-6 rounded-lg">
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-6 xl:row-span-2 xl:col-start-5 xl:col-span-6 rounded-lg">
                     <div class="flex flex-col gap-8 justify-start items-start px-6 md:px-8 py-6 md:py-8">
                         <div class="w-full max-w-35 h-full max-h-10">
                             <img src="assets/Logos/Hubspot_Logo.svg" alt="feature icon" class="w-full h-10">   
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-[var(--primary-bg-color)] xl:row-start-5  xl:col-start-11 xl:col-span-7 rounded-lg">
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-6  xl:col-start-11 xl:col-span-7 rounded-lg">
                 <!-- Testimonial card 2 -->
                 <div class="flex flex-col justify-start items-start gap-8 px-6 md:px-8 py-6 md:py-8">
                     <div class="w-full max-w-33 h-full max-h-10">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="bg-[var(--primary-bg-color)] xl:row-start-6 xl:col-start-11 xl:col-span-6 rounded-lg">
+                <div class="bg-[var(--primary-bg-color)] xl:row-start-7 xl:col-start-11 xl:col-span-6 rounded-lg">
                 <!-- Testimonial card 3 -->
                 <div class="flex flex-col justify-start items-start gap-8 px-6 md:px-8 py-6 md:py-8">
                     <div class="w-full max-w-34 h-full min-h-10">
@@ -361,7 +361,7 @@
         </div>
     </seciton>
 
-    <!-- Blog Sections -->
+    <!-- Blog Sections 1-->
     <section class="flex w-full justify-center py-16">
         <div class="flex flex-col xl:flex xl:flex-row max-w-3xl xl:max-w-6xl px-6 lg:px-0 gap-8">
         <div class="flex justify-center items-center bg-[var(--bg-phone-image)] h-auto xl:h-135 overflow-hidden relative max-w-full xl:min-w-135 rounded-lg">
@@ -386,6 +386,99 @@
              </button>  
         </div>
     </div>
+    </section>
+        <!-- Blog Sections 2 -->
+    <section class="flex w-full justify-center py-16">
+        <div class="flex flex-col max-w-3xl xl:max-w-6xl px-6 lg:px-0 gap-8">
+            <div class="flex flex-col xl:flex-row justify-start items-start xl:items-center gap-4 xl:gap-8 w-full">
+                <div class="w-full xl:flex-1 xl:basis-2/4">
+                    <h3 class="bio-heading">Enter the world of all fashion trends</h3>
+                </div>
+                <div class="w-full xl:flex-1 xl:basis-3/5">
+                    <p class="common-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Venenatis scelerisque at quam congue posuere libero in sit quam.
+                        Consequat, scelerisque non tincidunt sit lectus senectus.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg overflow-hidden">
+                <img src="assets/img/CoverImage.png" 
+                    alt="Fashion trends cover" 
+                    class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="flex justify-center w-full bg-[var(--third-bg-color)] px-40 gap-18">
+            <div class="flex flex-col justify-start items-start gap-12 w-full max-w-lg py-17">
+                    <div class="flex flex-col gap-2 ">   
+                        <h2 class="common-heading">
+                            Manage your projects from your mobile
+                        </h2>
+                        <p class="common-paragraph">
+                            Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. 
+                            Stay on track and complete on time!
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="label-font-size-1">
+                            Get the App
+                        </span>
+                        <div class="flex gap-2 cursor-pointer">
+                            <img src="assets/Vectors/GooglePlay_Badge.svg" 
+                                alt="Google Play Badge" 
+                                class="object-contain">    
+                            <img src="assets/Vectors/Appstore_Badge.svg" 
+                                alt="App Store Badge" 
+                                class="object-contain">
+                        </div>
+                    </div>
+                 </div>
+                
+                <div class="flex w-full xl:min-w-[560px] 2xl:max-w-[560px]  relative">
+                        <img src="assets/Mobile_Mockup/PhoneMockup1.svg" alt="iPhone X Mockup" class="w-70 absolute top-0">
+                        <img src="assets/Mobile_Mockup/PhoneMockup2.svg" alt="iPhone X Mockup" class="w-70 absolute bottom-0 right-0">
+                </div>
+    </section>
+        <footer class="flex flex-col w-full bg-[var(--black-bg-color)] px-40 py-14">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col justify-start items-start gap-6 ">
+                    <div class="mb-4 md:mb-0">
+                        <img src="assets/Website_Logo/Logo.svg" alt="Landify Logo" class="h-10 object-contain">
+                    </div>
+                    <div class="mt-4 md:mt-0 flex flex-col gap-4 footer-text">
+                        <div class="flex gap-6">
+                        <a href="#" class= hover:underline">Download Now</a>
+                        <a href="#" class= hover:underline">License</a>
+                        </div>
+                        <div class="flex gap-6"> 
+                            <a href="#" class= hover:underline">About</a>
+                            <a href="#" class= hover:underline">Feature</a>
+                            <a href="#" class= hover:underline">Pricing</a>
+                            <a href="#" class= hover:underline">Careers</a>
+                            <a href="#" class= hover:underline">Help</a>
+                            <a href="#" class= hover:underline">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="footer-license-font-size">
+                        &copy; 2020 Landify UI Kit. All rights reserved.
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="label-font-size-2">
+                        Get the App
+                    </span>
+                    <img src="assets/Vectors/GooglePlay_Badge.svg" 
+                            alt="Google Play Badge" 
+                            class="object-contain">    
+                    <img src="assets/Vectors/Appstore_Badge.svg" 
+                            alt="App Store Badge" 
+                            class="object-contain">
+                </div>
+            </div>
+        </footer>
     </section>
 
 
@@ -418,7 +511,7 @@
             "max-w-5xl",
             "mx-auto",
             "px-8",
-            "py-4"
+            "py-4",
             );
             navBtn.classList.remove("text-[var(--primary-text-Wcolor)]");
             mobileMenuBody.classList.remove("rounded-lg");

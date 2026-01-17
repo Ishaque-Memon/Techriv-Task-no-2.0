@@ -26,19 +26,23 @@ html {
     --secondary-bg-color: #F2F7FFB2;
     --primary-text-color: #18191F;
     --secondary-color: #8C30F5;
+    --third-bg-color: #2EC5CE;
+    --black-bg-color: #0B0D17;
     --primary-color: #18191F;
     --fixed-header-bg: #D6B1FF;
     --nav-menu-bg: #D6B1FF;
     --bg-phone-image: #F1E4FF;
     --testimonial-section-bg: #D5FAFC;
     --testmonial-subtitle-part-color: #969BAB;
+    --gray-text-color: #D9DBE1;
+
     
     
     /* Font variables using clamp(): dvw for modern browsers, vw as fallback for older browsers */
     --hero-heading: clamp(2rem, 6vw, 4.5rem);
     --hero-heading: clamp(2rem, 6dvw, 4.5rem);
-    --common-heading: clamp( 2rem, 4vw, 3rem);
-    --common-heading: clamp( 2rem, 4dvw, 3rem);
+    --common-heading: clamp( 1.75rem, 3.5vw, 3rem);
+    --common-heading: clamp( 1.75rem, 3.5dvw, 3rem);
     --common-paragraph: clamp(1rem, 2.5vw, 1.125rem);
     --common-paragraph: clamp(1rem, 2.5dvw, 1.125rem);
     --feature-card-heading: clamp(1rem, 2.5vw, 1.5rem);
@@ -51,9 +55,16 @@ html {
     --testimonial-subtitle-part: clamp(0.875rem, 2dvw, 1rem);
     --counter-heading: clamp( 1rem, 2.2vw, 1.75rem);
     --counter-heading: clamp( 1rem, 2.2dvw, 1.75rem);
-    --bio-heading: clamp(1.25rem, 3vw, 2.5rem);
+    --bio-heading: clamp(1.75rem, 3vw, 2.5rem);
+    --bio-heading: clamp(1.75rem, 3dvw, 2.5rem);
     --btn-text: clamp(0.875rem, 2vw, 1.25rem);
     --btn-text: clamp(0.875rem, 2dvw, 1.25rem);
+    --footer-text: clamp(0.875rem, 2vw, 1rem);
+    --footer-text: clamp(0.875rem, 2dvw, 1rem);
+    --footer-license-font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    --footer-license-font-size: clamp(0.75rem, 1.5dvw, 0.875rem);
+    --label-font-size: clamp(1rem, 2.5vw, 1.125rem);
+    --label-font-size: clamp(1rem, 2.5dvw, 1.125rem);
 }
 
 /* h1 */
@@ -67,6 +78,7 @@ html {
     font-size: var(--common-heading);
     color: var(--primary-text-color);
     font-weight: 800;
+    line-height: 64px
 }
 
 .common-paragraph {
@@ -108,7 +120,7 @@ html {
 .testimonial-subtitle-part {
     font-size: var(--testimonial-subtitle-part);
     color: var(--testmonial-subtitle-part-color);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px
 }
 
@@ -130,6 +142,34 @@ html {
     color: var(--secondary-color);
     font-weight: 700;
     line-height: 30px
+}
+
+.footer-text {
+    font-size: var(--footer-text);
+    color: var(--primary-text-Wcolor);
+    font-weight: 400;
+    line-height: 26px
+}
+
+.footer-license-font-size {
+    font-size: var(--footer-license-font-size);
+    color: var(--gray-text-color);
+    font-weight: 400;
+    line-height: 24px
+}
+
+.label-font-size-1 {
+    font-size: var(--label-font-size);
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 28px
+}
+
+.label-font-size-2 {
+    font-size: var(--label-font-size);
+    color: var(--gray-text-color);
+    font-weight: 500;
+    line-height: 28px
 }
 
 
