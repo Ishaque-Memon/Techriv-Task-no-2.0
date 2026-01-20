@@ -78,7 +78,7 @@ html {
     font-size: var(--common-heading);
     color: var(--primary-text-color);
     font-weight: 800;
-    line-height: 64px
+    /* line-height: 64px */
 }
 
 .common-paragraph {
@@ -128,7 +128,7 @@ html {
     font-size: var(--bio-heading);
     color: var(--primary-text-color);
     font-weight: 800;
-    line-height: 54px
+    /* line-height: 54px */
 }
 
 .btn-text {

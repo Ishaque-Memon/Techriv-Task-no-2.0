@@ -10,7 +10,7 @@
 <body>
     <section class="w-full relative min-h-screen">
      <!-- Background Image -->
-    <img src="assets/Bg_Img/Background.svg" alt="Background Image" class="w-full h-screen absolute top-0 left-0 object-cover -z-10">
+    <img src="assets/Bg_Img/Background.svg" alt="Background Image" class="w-full h-full absolute top-0 left-0 object-cover -z-10">
     <!-- Header Section -->
     <header class="fixed top-0 left-0 w-full z-30 flex justify-center transition-all duration-300 ease-out">
         
@@ -101,7 +101,8 @@
                 Organise projects.<br>
                 Get more done.
             </h1>
-             <button class="py-4 px-10 btn-text bg-[var(--secondary-color)] rounded-lg w-fit cursor-pointer hover:opacity-90 hover:scale-105 transtion-all duration-200">
+             <button class="py-4 px-10 btn-text bg-[var(--secondary-color)] rounded-lg w-fit cursor-pointer 
+                            hover:opacity-90 hover:scale-105 transtion-all duration-200">
                 Get Started
              </button>  
         </div>
@@ -201,7 +202,7 @@
                 <!-- Heading Section - Part of Grid on XL -->
                 <div class="flex xl:row-start-3 xl:col-start-3 xl:col-span-8 xl:absolute xl:top-0 xl:left-6 md:col-span-2 justify-center items-center">
                     <div class="flex flex-col items-center xl:items-start justify-center xl:justify-start relative text-center xl:text-start w-fit pt-10 xl:pt-0">
-                        <h2 class="common-heading z-1">
+                        <h2 class="common-heading  lg:leading-[64px] z-1">
                             Real Stories from <br>Real Customers
                         </h2>
                         <p class="common-paragraph lg:text-center ">
@@ -298,13 +299,12 @@
                 </div>
                 </div>
             </div>
-
     </section>
     <!-- Counter Section -->
     <seciton id="Counter-Stats" class="flex flex-col w-full px-6 py-6 xl:py-21 xl:px-41 bg-[var(--primary-bg-color)]">
         <div class="flex flex-col items-center justify-center gap-8 xl:flex-row xl:gap-8">
-        <div class="flex flex-col items-center xl:items-start justify-center gap-2 ">
-            <h2 class="common-heading">
+        <div class="flex flex-col items-center xl:items-start text-center lg:text-start justify-center gap-2 ">
+            <h2 class="common-heading leading-normal lg:leading-[64px]">
                 Our 18 years of achievements
             </h2>
             <p class="common-paragraph">
@@ -392,7 +392,7 @@
         <div class="flex flex-col max-w-3xl xl:max-w-6xl px-6 lg:px-0 gap-8">
             <div class="flex flex-col xl:flex-row justify-start items-start xl:items-center gap-4 xl:gap-8 w-full">
                 <div class="w-full xl:flex-1 xl:basis-2/4">
-                    <h3 class="bio-heading">Enter the world of all fashion trends</h3>
+                    <h3 class="bio-heading leading-normal lg:leading-[54px]">Enter the world of all fashion trends</h3>
                 </div>
                 <div class="w-full xl:flex-1 xl:basis-3/5">
                     <p class="common-paragraph">
@@ -411,10 +411,10 @@
     </section>
 
     <!-- Footer Section -->
-    <section class="flex justify-center w-full bg-[var(--third-bg-color)] px-40 gap-18">
-            <div class="flex flex-col justify-start items-start gap-12 w-full max-w-lg py-17">
+    <section class="flex flex-col xl:flex xl:flex-row justify-center items-center xl:items-stretch w-full bg-[var(--third-bg-color)] px-10 xl:px-40 gap-0 xl:gap-18">
+            <div class="flex flex-col justify-start items-center xl:items-start text-center xl:text-start gap-4 xl:gap-12 w-full max-w-lg py-17">
                     <div class="flex flex-col gap-2 ">   
-                        <h2 class="common-heading">
+                        <h2 class="common-heading leading-normal lg:leading-[64px]">
                             Manage your projects from your mobile
                         </h2>
                         <p class="common-paragraph">
@@ -437,23 +437,23 @@
                     </div>
                  </div>
                 
-                <div class="flex w-full xl:min-w-[560px] 2xl:max-w-[560px]  relative">
-                        <img src="assets/Mobile_Mockup/PhoneMockup1.svg" alt="iPhone X Mockup" class="w-70 absolute top-0">
-                        <img src="assets/Mobile_Mockup/PhoneMockup2.svg" alt="iPhone X Mockup" class="w-70 absolute bottom-0 right-0">
+                <div class="flex justify-center xl:justify-start w-full xl:min-w-[540px] 2xl:max-w-[540px]  xl:relative ">
+                        <img src="assets/Mobile_Mockup/PhoneMockup1.svg" alt="iPhone X Mockup" class="w-70 xl:absolute xl:top-0 hidden xl:inline">
+                        <img src="assets/Mobile_Mockup/PhoneMockup2.svg" alt="iPhone X Mockup" class="w-70 xl:absolute xl:bottom-0 xl:right-0">
                 </div>
     </section>
-        <footer class="flex flex-col w-full bg-[var(--black-bg-color)] px-40 py-14">
-            <div class="flex flex-col md:flex-row justify-between items-center">
+        <footer class="flex flex-col w-full bg-[var(--black-bg-color)] px-10 xl:px-40 py-14">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-0">
                 <div class="flex flex-col justify-start items-start gap-6 ">
                     <div class="mb-4 md:mb-0">
                         <img src="assets/Website_Logo/Logo.svg" alt="Landify Logo" class="h-10 object-contain">
                     </div>
                     <div class="mt-4 md:mt-0 flex flex-col gap-4 footer-text">
-                        <div class="flex gap-6">
+                        <div class="flex flex-col lg:flex-row  gap-6">
                         <a href="#" class= hover:underline">Download Now</a>
                         <a href="#" class= hover:underline">License</a>
                         </div>
-                        <div class="flex gap-6"> 
+                        <div class="flex flex-col lg:flex-row gap-6"> 
                             <a href="#" class= hover:underline">About</a>
                             <a href="#" class= hover:underline">Feature</a>
                             <a href="#" class= hover:underline">Pricing</a>
@@ -462,11 +462,11 @@
                             <a href="#" class= hover:underline">Privacy Policy</a>
                         </div>
                     </div>
-                    <div class="footer-license-font-size">
+                    <span class="hidden lg:inline footer-license-font-size">
                         &copy; 2020 Landify UI Kit. All rights reserved.
-                    </div>
+                    </span>
                 </div>
-                <div class="flex flex-col gap-4">
+                 <div class="flex flex-col gap-6 lg:gap-4">
                     <span class="label-font-size-2">
                         Get the App
                     </span>
@@ -477,9 +477,13 @@
                             alt="App Store Badge" 
                             class="object-contain">
                 </div>
+                <div class="flex justify-center items-center w-full lg:hidden">
+                    <div class="footer-license-font-size">
+                            &copy; 2020 Landify UI Kit. All rights reserved.
+                    </div>
+                </div>
             </div>
         </footer>
-    </section>
 
 
       <script>
