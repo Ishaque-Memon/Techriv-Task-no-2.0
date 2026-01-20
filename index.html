@@ -70,7 +70,7 @@
             </div>
 
             <!-- Mobile Menu (Hidden by default) -->
-            <div id="mobile-menu" class="hidden sm:hidden absolute top-full w-full left-0 mt-2 ">
+            <div id="mobile-menu" class="hidden sm:hidden absolute top-full w-full left-0 mt-2">
                 <div id="mobile-menu-body" class="flex flex-col gap-2 bg-[var(--nav-menu-bg)] p-5 cursor-pointer">
                     <a href="#" class="text-[var(--primary-text-Bcolor)] hover:bg-white/5 px-3 py-2 rounded-md">About</a>
                     <a href="#" class="text-[var(--primary-text-Bcolor)] hover:bg-white/5 px-3 py-2 rounded-md">Products</a>
@@ -521,6 +521,19 @@
         }
         });
 
+        // Mobile Menu - Prevent scroll and close on outside click
+        const mobileMenu = document.getElementById("mobile-menu");
+        
+        mobileMenu.addEventListener('wheel', (e) => {
+            e.preventDefault();
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(e.target) && !navBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
         // Generating Duplicate Logos for Infinite Marquee
         const logoContainer = document.getElementById("logo-container");
 
@@ -585,7 +598,6 @@
                         element.textContent = target.toLocaleString() + suffix;
                     }
                     }
-
                     requestAnimationFrame(updateCounter);
                 });
         }
