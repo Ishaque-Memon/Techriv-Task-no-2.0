@@ -8,7 +8,7 @@
     <title>Landify</title>
 </head>
 <body>
-    <section class="w-full relative min-h-screen">
+    <section class="w-full relative">
      <!-- Background Image -->
     <img src="assets/Bg_Img/Background.svg" alt="Background Image" class="w-full h-full absolute top-0 left-0 object-cover -z-10">
     <!-- Header Section -->
@@ -23,6 +23,39 @@
 
         <!-- Header Content -->
             <div class="flex items-center justify-start md:justify-between w-full">
+                
+                <!-- Logo + Desktop Nav (Center on mobile, Left on desktop) -->
+                <div class="flex items-center justify-start md:justify-center flex-1 sm:flex-initial sm:justify-start gap-[32px]">
+                    <a href="#" class="cursor-pointer">
+                        <img src="assets/Website_Logo/Dark.svg" 
+                        alt="Landify Logo" 
+                        class="h-8 sm:h-10 object-contain"> 
+                    </a>
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden sm:flex items-center gap-[32px] text-[var(--primary-color)] font-bold text-[14px] cursor-pointer">
+                        <a href="#" class="hover:text-gray-600">About</a>
+                        <a href="#" class="hover:text-gray-600">Products</a>
+                        <a href="#" class="hover:text-gray-600">Pricing</a>
+                        <a href="#" class="hover:text-gray-600">Blog</a>
+                        <div class="flex gap-[8px] items-center relative">
+                            <a href="#" class="hover:text-gray-600">More
+                            </a>
+                            <img src="assets/Vectors/DropDown_Vector.svg" alt="Drop down menu" class="w-3 h-2 relative top-[1px]"/>
+                        </div>
+                    </nav>
+                </div>
+
+                
+                <!-- App Badges (Right) -->
+                <div class="hidden xl:flex items-center gap-[16px] cursor-pointer">
+                    <img src="assets/Vectors/GooglePlay_Badge.svg" 
+                    alt="Google Play Badge" 
+                    class="h-10 object-contain">    
+                    <img src="assets/Vectors/AppStore_Badge.svg" 
+                    alt="App Store Badge" 
+                    class="h-10 object-contain"> 
+                </div>
+                
                 <!-- Mobile Menu Button (Left) -->
                 <div class="flex items-center sm:hidden">
                     <button id="nav-btn" type="button" 
@@ -33,41 +66,7 @@
                             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                </div>
-
-                <!-- Logo + Desktop Nav (Center on mobile, Left on desktop) -->
-                <div class="flex items-center justify-center flex-1 sm:flex-initial sm:justify-start gap-[32px]">
-                    <a href="#" class="cursor-pointer">
-                        <img src="assets/Website_Logo/Dark.svg" 
-                            alt="Landify Logo" 
-                            class="h-10 object-contain"> 
-                    </a>
-                        <!-- Desktop Navigation -->
-                        <nav class="hidden sm:flex items-center gap-[32px] text-[var(--primary-color)] font-bold text-[14px] cursor-pointer">
-                            <a href="#" class="hover:text-gray-600">About</a>
-                            <a href="#" class="hover:text-gray-600">Products</a>
-                            <a href="#" class="hover:text-gray-600">Pricing</a>
-                            <a href="#" class="hover:text-gray-600">Blog</a>
-                            <div class="flex gap-[8px] items-center relative">
-                            <a href="#" class="hover:text-gray-600">More
-                            </a>
-                            <img src="assets/Vectors/DropDown_Vector.svg" alt="Drop down menu" class="w-3 h-2 relative top-[1px]"/>
-                            </div>
-                        </nav>
-                </div>
-                
-                <!-- App Badges (Right) -->
-                <div class="hidden xl:flex items-center gap-[16px] cursor-pointer">
-                    <img src="assets/Vectors/GooglePlay_Badge.svg" 
-                             alt="Google Play Badge" 
-                             class="h-10 object-contain">    
-                        <img src="assets/Vectors/AppStore_Badge.svg" 
-                             alt="App Store Badge" 
-                             class="h-10 object-contain"> 
-                </div>
-
-                <!-- Mobile placeholder to balance flex -->
-                <div class="w-10 sm:hidden"></div>
+                </div> 
             </div>
 
             <!-- Mobile Menu (Hidden by default) -->
@@ -95,13 +94,13 @@
   
     </header>
     <!-- Hero Section -->
-     <section class="flex flex-col md:flex-row items-center justify-evenly gap-8 md:gap-0 pt-[120px] min-h-screen relative">
+     <section class="flex flex-col md:flex-row items-center justify-evenly gap-8 md:gap-0 pt-[120px] relative">
         <div class="flex flex-col max-w-2xl items-center md:items-start w-full md:w-auto">
             <h1 class="hero-heading leading-tight lg:leading-[98px] mb-8 text-center md:text-start">
                 Organise projects.<br>
                 Get more done.
             </h1>
-             <button class="py-4 px-10 btn-text bg-[var(--secondary-color)] rounded-lg w-fit cursor-pointer 
+             <button class="py-2 md:py-4 px-8 md:px-10 btn-text bg-[var(--secondary-color)] rounded-lg w-fit cursor-pointer 
                             hover:opacity-90 hover:scale-105 transtion-all duration-200">
                 Get Started
              </button>  
@@ -302,8 +301,8 @@
     </section>
     <!-- Counter Section -->
     <seciton id="Counter-Stats" class="flex flex-col w-full px-6 py-6 xl:py-21 xl:px-41 bg-[var(--primary-bg-color)]">
-        <div class="flex flex-col items-center justify-center gap-8 xl:flex-row xl:gap-8">
-        <div class="flex flex-col items-center xl:items-start text-center lg:text-start justify-center gap-2 ">
+        <div class="flex flex-col items-center justify-center gap-8 xl:flex-row xl:gap-30">
+        <div class="flex flex-col items-center xl:items-start text-center xl:text-start justify-center gap-2 w-full max-w-lg">
             <h2 class="common-heading leading-normal lg:leading-[64px]">
                 Our 18 years of achievements
             </h2>
@@ -311,8 +310,8 @@
                 With our super powers we have reached this
             </p>
         </div>
-        <div class=" grid xl:grid-cols-2 gap-y-10 gap-x-8 w-full xl:w-1/2">
-                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-1 col-end-1">
+        <div class=" grid xl:grid-cols-2 gap-y-8 gap-x-8 w-full xl:max-w-lg">
+                <div class="flex gap-4 w-full xl:w-fit justify-center items-center col-start-1 col-end-1">
                     <img src="assets/Vectors/01.svg" alt="feature icon">
                     <div class="flex flex-col items-start justify-start ">
                     <h4 data-target="10000" data-suffix="+" class="counter-heading">
@@ -323,7 +322,7 @@
                     </span>
                 </div>
                 </div>
-                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-2 col-end-2">
+                <div class="flex gap-4 w-full xl:w-fit justify-center items-center col-start-2 col-end-2">
                     <img src="assets/Vectors/04.svg" alt="feature icon">
                     <div class="flex flex-col items-start justify-start">
                     <h4 data-target="2" data-suffix="Million" class="counter-heading">
@@ -334,7 +333,7 @@
                     </span>
                 </div>
                 </div>
-            <div class="flex gap-4 justify-center xl:justify-start items-center col-start-1 col-end-1">
+            <div class="flex gap-4 w-full xl:w-fit justify-center items-center col-start-1 col-end-1">
                     <img src="assets/Vectors/05.svg" alt="feature icon">
                     <div class="flex flex-col items-start justify-start">
                     <h4 data-target="500" data-suffix="+" class="counter-heading">
@@ -345,7 +344,7 @@
                     </span>
                 </div>
                 </div>
-                <div class="flex gap-4 justify-center xl:justify-start items-center col-start-2 col-end-2">
+                <div class="flex gap-4 w-full xl:w-fit justify-center items-center col-start-2 col-end-2">
                     <img src="assets/Vectors/07.svg" alt="feature icon">
                     <div class="flex flex-col items-start justify-start">
                     <h4 data-target="140" data-suffix="" class="counter-heading">
